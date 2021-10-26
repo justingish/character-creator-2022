@@ -3,17 +3,19 @@
   padding-bottom: 64px;
 }
 
-.maxWidthWrapper {
-  position: relative;
-}
-
-.perspective {
+/* Adding Perspective Box */
+.characterEditor::before {
+  content: '';
   position: fixed;
   background-color: hsl(195deg, 20%, 86%);
-  width: 100vw;
-  height: 60vh;
-  top: 40vw;
+  width: 100%;
+  height: 40%;
+  bottom: 0;
   left: 0;
+}
+
+.maxWidthWrapper {
+  position: relative;
 }
 
 .header {
@@ -38,8 +40,9 @@
   min-height: 500px;
   position: fixed;
   top: 100px;
-  right: 25px;
-  bottom: 100px;
+  left: 50%;
+  margin-left: 48px;
+  bottom: 50px;
 }
 
 .controlColumn {
